@@ -1,10 +1,13 @@
-package com.xssgt.starassault;
+package com.xssgt.starassault.view;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.Rectangle;
+import com.xssgt.starassault.model.Block;
+import com.xssgt.starassault.model.Bob;
+import com.xssgt.starassault.model.World;
 
 
 public class WorldRederer {

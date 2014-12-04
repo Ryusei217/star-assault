@@ -1,8 +1,10 @@
-package com.xssgt.starassault;
+package com.xssgt.starassault.screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
+import com.xssgt.starassault.model.World;
+import com.xssgt.starassault.view.WorldRederer;
 
 public class GameScreen implements Screen {
 	
