@@ -9,9 +9,9 @@ public class Bob {
 		IDLE, WALKING, JUMPING, DYING
 	}
 	
-	static final float SPEED = 2f; //unidad por segundo
+	public static final float SPEED = 4f; //unidad por segundo
 	static final float JUMP_VELOCITY = 1f;
-	static final float SIZE = 0.5f; //media unidad
+	public static final float SIZE = 0.5f; //media unidad
 	
 	Vector2 position = new Vector2();
 	Vector2 acceleration = new Vector2();
@@ -33,5 +33,28 @@ public class Bob {
 	public Vector2 getPosition() {
 		return position;
 	}
-
+	
+	public void setState(State newState) {
+		this.state = newState;
+	}
+	
+	public void update(float delta) {
+		position.add(velocity.cpy().scl(delta));
+	}
+	
+	public void setFacingLeft(boolean facingLeft) {
+		this.facingLeft = facingLeft;
+	}
+	
+	public void setVelocity(Vector2 velocity) {
+		this.velocity = velocity;
+	}
+	
+	public Vector2 getVelocity() {
+		return velocity;
+	}
+	
+	public Vector2 getAcceleration() {
+		return acceleration;
+	}
 }
